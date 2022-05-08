@@ -1,0 +1,104 @@
+/* Define Color Variables */
+:root {
+    --red: #c5050c;
+    --dark-red: #9b0000;
+    --offwhite: #f7f7f7;
+    --greyblue: #dadfe1;
+    --black: #494949;
+}
+
+/* Navbar Styles */
+nav {
+  width: 100vw;
+  position: relative;
+  max-width: 100%;
+}
+
+.title-box {
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    padding-top: 5px;
+}
+
+.data-note {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.spacer-box {
+  height:70px
+}
+
+.iconbutton {
+  font-family: "Lato", sans-serif;
+}
+
+.btn-group {
+  border: solid;
+  border-color: white;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    background-color: #dadfe1;
+  }
+
+.dropdown {
+  margin: 10px;
+}
+
+#main {
+  position: absolute;
+  width: 100%;
+  background-color: #dadfe1;
+  top:60px;
+  margin: 0px;
+
+}
+
+.vizrow {
+  position: relative;
+  height: 100vh;
+}
+
+.left-column, .right-column {
+  margin: 0px;
+  padding: 0px;
+}
+
+.card {
+  margin: 20px;
+}
+
+#map-box {
+  width: 100%px;
+  height: 80vh;
+}
+
+.counties, .bars {
+  stroke: white;
+  stroke-width: .5px;
+}
+
+#detail-area {
+  height: 120px;
+}
+
+.county-name-detail {
+
+}
+
+.btn-group {
+  border: none;
+}
+
+.dropdown-toggle {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.county-value-detail {
+  font-size: x-large;
+}

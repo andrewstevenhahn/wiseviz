@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>WISEviz 2020</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- Leave those next 4 lines if  you care about users using IE8 -->
+    <!-- [if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif] -->
+  </head>
+  <body>
+
+
+
+    <!-- TODO: Here goes your content! -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark ">
+        <div class="container-fluid d-flex">
+            <div class="title-box">
+                <h3>WISEviz 2020 Wisconsin Graduation Data Explorer</h3>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Map</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://dpi.wi.gov/wisedata">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://dpi.wi.gov/wisedash/download-files/type?field_wisedash_upload_type_value=All">Data</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!--       
+    <div id="main">
+        <div class="row container-fluid vizrow">
+          <div id="map-box">
+            <p>Hello</p>
+          </div>
+        </div>
+    </div> -->
+
+    <div class="row" id="main">
+      <div class="col-lg-8 left-column">
+        <div class="card bg-default">
+          <h5 class="card-header" id="map-title">
+            County Map: Total High School Completers
+          </h5>
+          <div class="card-body" id="map-box">
+            <p class="card-text">
+              JavaScript not enabled. 
+            </p>
+          </div>
+          <div class="card-footer">
+            <p class="data-note">Source: Wisconsin Information System for Education (WISE) Data, published 2022 by Wisconsin Department of Public Instruction.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 right-column">
+        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+          <div class="btn-group" role="group">
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span id="metric-label">Select Graduation Metric </span>
+            </button>
+            <div class="dropdown-menu" id="metricDropdown" aria-labelledby="metricDropdown">
+            </div>
+          </div>           
+        </div>
+        <div class="card">
+          <h5 class="card-header">
+            County Details
+          </h5>
+          <div class="card-body" id="detail-area">
+            <p class="card-text d-flex">
+              Hover over a county to view details.
+            </p>
+          </div>
+        </div>
+        <div class="card ">
+          <h5 class="card-header" id="bar-title">
+            Counties Ranked: Total High School Completers
+          </h5>
+          <div class="card-body" id="bar-area">
+            <p class="card-text">
+              Could not load content. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+    <script src="js/main2.js" async defer></script>
+</body>
+</html>
+
+
+
